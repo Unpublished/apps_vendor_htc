@@ -24,11 +24,11 @@ LOCAL_SRC_FILES := system/priv-app/Camera/Camera.apk
 #    libhtccamera \
 #    libjpeg_turbo \
 #    libmorpho_image_stitcher3 \
-#    libopencv_core \
-#    libopencv_highgui \
-#    libopencv_imgproc \
-#    libopencv_objdetect \
-#    libopencv_photo \
+#    libopencv_core_prebuilt \
+#    libopencv_highgui_prebuilt \
+#    libopencv_imgproc_prebuilt \
+#    libopencv_objdetect_prebuilt \
+#    libopencv_photo_prebuilt \
 #    libpanoramaplus \
 #    libpanostitcher \
 #    libsecuritysdk \
@@ -197,7 +197,7 @@ LOCAL_PROPRIETARY_MODULE := true
 include $(PREBUILT_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := libopencv_core
+LOCAL_MODULE := libopencv_core_prebuilt
 LOCAL_MODULE_OWNER := htc
 LOCAL_SRC_FILES := system/lib/libopencv_core.so
 LOCAL_MULTILIB := 32
@@ -206,7 +206,7 @@ LOCAL_PROPRIETARY_MODULE := true
 include $(PREBUILT_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := libopencv_highgui
+LOCAL_MODULE := libopencv_highgui_prebuilt
 LOCAL_MODULE_OWNER := htc
 LOCAL_SRC_FILES := system/lib/libopencv_highgui.so
 LOCAL_MULTILIB := 32
@@ -215,7 +215,7 @@ LOCAL_PROPRIETARY_MODULE := true
 include $(PREBUILT_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := libopencv_imgproc
+LOCAL_MODULE := libopencv_imgproc_prebuilt
 LOCAL_MODULE_OWNER := htc
 LOCAL_SRC_FILES := system/lib/libopencv_imgproc.so
 LOCAL_MULTILIB := 32
@@ -224,7 +224,7 @@ LOCAL_PROPRIETARY_MODULE := true
 include $(PREBUILT_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := libopencv_objdetect
+LOCAL_MODULE := libopencv_objdetect_prebuilt
 LOCAL_MODULE_OWNER := htc
 LOCAL_SRC_FILES := system/lib/libopencv_objdetect.so
 LOCAL_MULTILIB := 32
@@ -233,7 +233,7 @@ LOCAL_PROPRIETARY_MODULE := true
 include $(PREBUILT_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := libopencv_photo
+LOCAL_MODULE := libopencv_photo_prebuilt
 LOCAL_MODULE_OWNER := htc
 LOCAL_SRC_FILES := system/lib/libopencv_photo.so
 LOCAL_MULTILIB := 32
